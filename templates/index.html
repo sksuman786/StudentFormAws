@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{title}}</title>
+</head>
+<body>
+  <h2>{{si}}</h2>
+  <form method="GET">
+    {% csrf_token %}
+    <label for="username">Name:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+    
+    <label >Phone:</label><br>
+    <input type="number" id="password" name="ph"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  <p>Student info: </p>
+  <br>
+  <p>Student Name: {{na}}</p>
+   <br>
+  <p>Student Phone: {{ph}}</p>
+  
+</body> 
+</html>
